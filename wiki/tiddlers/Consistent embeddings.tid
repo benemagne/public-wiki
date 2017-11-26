@@ -1,0 +1,41 @@
+created: 20171126130156750
+modified: 20171126134231237
+tags: 
+title: Consistent embeddings
+type: text/vnd.tiddlywiki
+
+In the previous section, working with sequences proved to be sufficient because the separability of $$ E $$ implied the metrisability of the weak* topology on bounded subsets of $$ E' $$. However, if $$ E $$ is non-separable, this metrisability is no longer guaranteed and the only metrisable topology around---the norm topology on $$ E' $$---turns out to be too fine to work with. To proceed, we therefore need more structure, and the motivation comes from the following observation: Let $$ (\Omega, \mathcal{F}, P) $$ be a probability space. It is well-known that the topological dual of the Banach space $$ L^{1} \equiv L^{1}(\Omega, \mathcal{F}, P) $$ can be identified with the space $$ L^{\infty} \equiv L^{\infty}(\Omega, \mathcal{F}, P) $$. However, since $$ P(\Omega) < \infty $$, the dual space $$ L^{\infty} $$ is naturally embedded in $$ L^{1} $$. This embedding makes available on $$ L^{\infty} $$ the norm topology from $$ L^{1} $$, and we will see that it is compatible with the weak* topology. We formulate an abstract version of embedding property and derive several consequences.
+
+!!! Definition:
+
+We say that an injective map $$ \iota: E' \hookrightarrow E $$ is an ''embedding consistent with the dual pair $$ \langle E, E' \rangle $$'' if
+
+$$
+	\langle \iota(X'), Y' \rangle = \langle \iota(Y'), X' \rangle, \quad X',Y'\in E'.
+$$
+
+!!! Lemma:
+
+Any embedding $$ \iota: E' \hookrightarrow E $$ consistent with the dual pair $$ \langle E, E' \rangle $$ is linear. It is continuous as a map from $$ (E', \sigma(E',E)) $$ to $$ (E, \sigma(E,E')) $$
+
+//Proof:// Let $$ \iota: E' \hookrightarrow E $$ be consistent with the dual pair $$ \langle E, E' \rangle $$ Let $$ X', Y' \in E' $$ and $$ \alpha, \beta \in \mathbb{R} $$. Then for any $$ Z' \in E' $$
+
+$$
+	\langle \iota(\alpha X' + \beta Y'), Z' \rangle = \langle \alpha X' + \beta Y', \iota(Z') \rangle
+$$
+$$  
+	= \alpha \langle X', \iota(Z') \rangle + \beta \langle Y', \iota(Z') \rangle
+$$
+$$
+	= \langle \alpha \iota(X') + \beta \iota(Y'), Z' \rangle.
+$$
+
+Since the pairing $$ \langle \cdot, \cdot \rangle $$ separates points in $$ E $$ this implies $$ \iota(\alpha X' + \beta Y') = \alpha \iota(X') + \beta \iota(Y') $$
+
+Now, let $$ (X'_{\alpha})_{\alpha \in I} \subseteq E' $$ be a $$ \sigma(E',E) $$-convergent net with limit $$ X' \in E' $$. Then
+
+$$
+	\langle \iota(X'_{\alpha}), Y' \rangle = \langle \iota(Y'), X'_{\alpha} \rangle \rightarrow \langle \iota(Y'), X' \rangle = \langle \iota(X'), Y' \rangle, \quad Y' \in E',
+$$
+
+i.e. $$ \iota(X'_{\alpha}) \rightarrow \iota(X') $$ in $$ \sigma(E,E') $$. Hence, $$ \iota $$ is continuous.
