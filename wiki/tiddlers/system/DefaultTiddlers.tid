@@ -5,4 +5,8 @@ type: text/vnd.tiddlywiki
 
 'Formless and void...'
 [tag[Post]!sort[created]first[3]]
+<<<<<<< HEAD
 'Show More...'
+=======
+'Show More...'
+>>>>>>> 83c9f2db8fea94fe741ad8710bd589d77cccb951
