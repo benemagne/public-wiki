@@ -1,11 +1,15 @@
 created: 20171127105941638
-modified: 20171127120046021
+modified: 20171127124453136
 synopsis: Das unheilvolle Begriffspaar "Arbeitgeber"/"Arbeitnehmer" und was unser Gehirn daraus macht
 tags: Post
 title: Geben ist seliger denn nehmen
+type: text/vnd.tiddlywiki
 
 Elisabeth Wehlings Buch [[Politisches Framing|https://books.google.de/books/about/Politisches_Framing.html?id=xUkYDgAAQBAJ&redir_esc=y&hl=de]] gilt (mangels Konkurrenz?) als das deutschsprachige Standardwerk zum kognitionswissenschaftlichen Hype-Thema Framing. Die Kernthese: Wenn das meschliche Gehirn Worte verarbeitet, aktivieren diese unweigerlich abgespeicherte zugehörige Deutungsrahmen, sogenannte Frames, welche die Interpretation des Wahrgenommenen entscheidend bestimmen; die objektive Bedeutung der Worte ist demgegenüber zweitrangig. Die Wirkung von Aussagen kann so verzerrt, im Extremfall gar ins Gegenteil verkehrt werden - es ist der Ton, der die Musik macht. Sinngemäß könne daher, so Wehling, im Wettkampf der politischen Standpunkte im 21. Jahrhundert nur bestehen, wer die framing-gehärtete Klinge einer bewusst manipulativen Sprache zu führen weiß.
 
 Bei weitem nicht alle Argumente und Belege der Autorin sind überzeugend (eine ausführliche Rezension des Buches soll an anderer Stelle nachgeliefert werden). Ein Beispiel jedoch möchte ich herausgreifen, das sich gleichermaßen durch Alltäglichkeit und außergewöhnliche Plausibilität, die keiner kognitionswissenschaftlichen Metatheorie bedarf, auszeichnet. Die Rede ist vom Begriffspaar "Arbeitgeber"/"Arbeitnehmer". Überdeutlich wird hier der Unternehmer als großzügiger "Geber" charakterisiert, während der Angestellte als dankbarer "Nehmer" stigmatisiert wird. Es fällt leicht, Wehling zu folgen, wenn sie argumentiert, dass die Verwendung dieser Begriffe auch im sachlichem Kontext (etwa der Nachrichtenberichterstattung) unweigerlich eine unternehmerfreundliche Betrachtungsweise mittransportiert. Mehreres ist hierbei bemerkenswert: Die Bezeichnungen "Arbeitgeber" und "Arbeitnehmer" sind Alltagsvokabeln, die trotz ihres unverhohlenen Subtextes auch von Vertretern der politischen Linke nahezu alternativlos verwendet werden (z.B. [[Beleg]]). Es handelt sich also gerade nicht um Kampfbegriffe, die bewusst nur von einer Teilgruppe verwendet werden (etwa wenn amerikanische Libertäre jede Form von staatlicher Regulierung als "government intervention" bezeichnen). Das ist umso erstaunlicher, da - wie Wehling treffend beobachtet - ja durchaus auch die umgekehrte Begriffsdeutung plausibel wäre: "Arbeitgeber" ist der Angestellte, der für den Unternehmer, den dankbaren "Arbeitnehmer", seine Arbeit erbringt.
 
 Der hier beschriebene Framing-Effekt scheint mir so deutlich, dass ich in diesem Fall tatsächlich Handlungsbedarf sehe. Wer aus einer linken, arbeiterfreundlichen Perspektive etwa Tarifverhandlungen kommentiert, sollte sich nicht des Begriffspaars "Arbeitgeber"/"Arbeitnehmer" bedienen. Fraglich bleibt nur, welche alternativen Vokabeln ausreichend wertneutral (oder sogar umgekehrt manipulativ) und geläufig sind, um hier zum Einsatz zu kommen.
+
+//URL of this post://<br>
+<$macrocall $name="createUrlLink" title={{!!title}}/>

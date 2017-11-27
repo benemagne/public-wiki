@@ -1,0 +1,11 @@
+created: 20171127082406747
+modified: 20171127124627460
+synopsis: Thoughts on something very important
+tags: Post
+title: Test Post, Vol. 4
+type: text/vnd.tiddlywiki
+
+No content is content as well...
+
+//URL of this post://<br>
+<$macrocall $name="createUrlLink" title={{!!title}}/>

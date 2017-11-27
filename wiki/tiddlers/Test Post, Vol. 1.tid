@@ -1,0 +1,11 @@
+created: 20171127082306779
+modified: 20171127124742315
+synopsis: Nobody knows the bubble I've seen
+tags: Post
+title: Test Post, Vol. 1
+type: text/vnd.tiddlywiki
+
+There's magic in every beginning.
+
+//URL of this post://<br>
+<$macrocall $name="createUrlLink" title={{!!title}}/>

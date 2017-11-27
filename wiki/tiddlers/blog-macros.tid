@@ -1,0 +1,7 @@
+created: 20171127124343327
+modified: 20171127124422253
+tags: $:/tags/Macro
+title: blog-macros
+type: text/vnd.tiddlywiki
+
+\define createUrlLink(title) [[https://benemagne.github.io/public-wiki/#$title$]]
