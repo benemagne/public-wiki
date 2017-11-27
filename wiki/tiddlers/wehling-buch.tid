@@ -1,0 +1,19 @@
+bibtex.address: Köln
+bibtex.author: Wehling, Elisabeth
+bibtex.publisher: Herbert von Halem Verlag
+bibtex.reference: wehling-buch
+bibtex.title: Politisches Framing
+bibtex.type: book
+bibtex.year: 2016
+created: 20171115110207776
+modified: 20171127185330025
+tags: Quellenangabe
+title: wehling-buch
+type: text/vnd.tiddlywiki
+
+|!type |{{!!bibtex.type}} |
+|!title |{{!!bibtex.title}} |
+|!author |{{!!bibtex.author}} |
+|!publisher |{{!!bibtex.publisher}} |
+|!address |{{!!bibtex.address}} |
+|!year |{{!!bibtex.year}} |

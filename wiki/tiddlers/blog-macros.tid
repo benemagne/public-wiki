@@ -1,7 +1,32 @@
 created: 20171127124343327
-modified: 20171127145137307
+modified: 20171127182429787
 tags: $:/tags/Macro
 title: blog-macros
 type: text/vnd.tiddlywiki
 
 \define createUrlLink(title) [[https://benemagne.github.io/public-wiki/#$title$:Navigate]]
+
+\define ref(label)
+<$button popup="$:/state/$label$" class="tc-btn-invisible tc-slider"><sup style="color:green">$label$</sup></$button>
+\end
+
+\define definition(label,text)
+<$reveal type="popup" state="$:/state/$label$" animate="yes">
+<div class="tc-drop-down">
+<dl>
+<dt>$label$</dt>
+<dd>$text$</dd>
+</dl>
+</div>
+</$reveal>
+\end
+
+\define footnote(label,text)
+<<ref "$label$">>
+<<definition "$label$" "$text$">>
+\end
+
+\define footnotes(label,text)
+<<definition "$label$" "$text$">>
+<sub><span style="color:green">$label$ : </span> $text$</sub>
+\end

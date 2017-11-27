@@ -1,11 +1,13 @@
 created: 20171127082327481
-modified: 20171127124747787
+modified: 20171127183227164
 synopsis: Testing is the best thing
 tags: Post
 title: Test Post, Vol. 2
 type: text/vnd.tiddlywiki
 
 Is that everything?
+
+---
 
 //URL of this post://<br>
 <$macrocall $name="createUrlLink" title={{!!title}}/>

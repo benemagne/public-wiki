@@ -1,11 +1,13 @@
 created: 20171127082344724
-modified: 20171127124752876
+modified: 20171127183134364
 synopsis: The whole and all that
 tags: Post
 title: Test Post, Vol. 3
 type: text/vnd.tiddlywiki
 
 This is the end, my friend.
+
+---
 
 //URL of this post://<br>
 <$macrocall $name="createUrlLink" title={{!!title}}/>
