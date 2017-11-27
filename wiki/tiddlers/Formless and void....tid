@@ -1,9 +1,18 @@
 created: 20171126134647465
 creator: danielo515
-modified: 20171126135242348
+modified: 20171127094823492
 title: Formless and void...
 type: text/vnd.tiddlywiki
 
 Not much going on here... Content to follow!
 
+[img[tallinn_doors.jpg]]
+
 Just a little teaser: [[Consistent embeddings]]
+
+Recent posts:
+<$list filter="[tag[Post]!sort[created]first[3]]">
+
+<$link to={{!!title}}><$view field="title"/></$link> (<$view field="created" format="date" template="DDth MMM YYYY"/>)<br>
+<$view field="synopsis"/>
+</$list>
