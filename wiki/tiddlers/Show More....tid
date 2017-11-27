@@ -1,0 +1,19 @@
+created: 20171127132852624
+modified: 20171127135932749
+tags: 
+title: Show More...
+type: text/vnd.tiddlywiki
+
+\define openByFilter(filter)
+	<$button>
+		Display Older Posts
+		<$list filter=$filter$>
+			<$action-navigate $to={{!!title}}/>
+		</$list>
+        <$action-sendmessage $message="tm-close-tiddler" $param="Show More..."/>
+	</$button>
+\end
+
+<center>
+<<openByFilter filter:'[tag[Post]]'>>
+</center>

@@ -1,0 +1,24 @@
+created: 20171127135820814
+modified: 20171127145437091
+tags: 
+title: Navigate
+type: text/vnd.tiddlywiki
+
+\define openByFilter(caption, filter)
+	<$button>
+		$caption$
+        <$action-sendmessage $message="tm-close-other-tiddlers" $param="Navigate"/>
+		<$list filter=$filter$>
+			<$action-navigate $to={{!!title}}/>
+		</$list>
+        <$action-sendmessage $message="tm-close-tiddler" $param="Navigate"/>
+	</$button>
+\end
+
+<$set name='fil' value="[title[Show More...]] [tag[Post]!sort[created]first[3]sort[created]] [title[Formless and void...]]">
+
+<center>
+<$macrocall $name="openByFilter" caption='Back to homepage' filter="<<fil>>"/>
+</center>
+
+</$set>
