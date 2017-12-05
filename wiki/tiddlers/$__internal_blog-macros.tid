@@ -1,7 +1,7 @@
 created: 20171127124343327
-modified: 20171127182429787
+modified: 20171205190437983
 tags: $:/tags/Macro
-title: blog-macros
+title: $:/internal/blog-macros
 type: text/vnd.tiddlywiki
 
 \define createUrlLink(title) [[https://benemagne.github.io/public-wiki/#$title$:Navigate]]
@@ -29,4 +29,11 @@ type: text/vnd.tiddlywiki
 \define footnotes(label,text)
 <<definition "$label$" "$text$">>
 <sub><span style="color:green">$label$ : </span> $text$</sub>
+\end
+
+\define clickableBookCitation(book, prefix)
+$prefix$<$tiddler tiddler="$book$">
+{{!!book.author}}, <$link>//{{!!book.title}}//</$link>. {{!!book.address}}: {{!!book.publisher}},
+{{!!book.year}}.
+</$tiddler>
 \end

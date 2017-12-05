@@ -1,0 +1,21 @@
+book.address: Köln
+book.author: Elisabeth Wehling
+book.edition: 1
+book.editor: 
+book.publisher: Herbert von Halem Verlag
+book.series: edition medienpraxis
+book.title: Politisches Framing
+book.url: https://books.google.de/books?id=xUkYDgAAQBAJ&printsec=frontcover&hl=de#v=onepage&q&f=false
+book.volume: 14
+book.year: 2016
+created: 20171205120428087
+modified: 20171205185921838
+selection: [[Elisabeth Wehling: Politisches Framing > Notes]]
+tags: Data Book Society Politics
+title: Elisabeth Wehling: Politisches Framing
+
+<<display-attributes-book>>
+
+<<display-linked-content>>
+
+<<display-preview>>

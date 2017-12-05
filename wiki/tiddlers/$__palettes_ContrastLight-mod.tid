@@ -1,6 +1,6 @@
 created: 20171127092104614
 description: High contrast and unambiguous (light version) (modified)
-modified: 20171127092823404
+modified: 20171128083306953
 name: Contrast (Light)-mod
 tags: $:/tags/Palette
 title: $:/palettes/ContrastLight-mod
@@ -47,7 +47,7 @@ modal-header-border: <<colour foreground>>
 muted-foreground: <<colour foreground>>
 notification-background: <<colour background>>
 notification-border: <<colour foreground>>
-page-background: <<colour background>>
+page-background: #f4f4f4
 pre-background: <<colour background>>
 pre-border: <<colour foreground>>
 primary: #176a7b
