@@ -1,0 +1,92 @@
+created: 20171203121942522
+modified: 20171205183314391
+tags: $:/tags/Macro
+title: $:/internal/custom-macros
+
+\define concatenate(string1 string2 string3 string4 string5 string6 string7 string8 string9 string10)
+$string1$$string2$$string3$$string4$$string5$$string6$$string7$$string8$$string9$$string10$
+\end
+
+
+\define 1-tag-toc(tag1)
+<div class="tc-table-of-contents">
+<$macrocall  $name="toc-selective-expandable" tag=$tag1$ sort="sort[title]"/>
+</div>
+\end
+
+
+\define 2-tag-toc(tag1, tag2)
+<div class="tc-table-of-contents">
+<$macrocall  $name="toc-selective-expandable" tag=<<concatenate $tag1$ "]tag[" $tag2$>> sort="sort[title]"/>
+</div>
+\end
+
+
+\define 3-tag-toc(tag1, tag2, tag3)
+<div class="tc-table-of-contents">
+<$macrocall  $name="toc-selective-expandable" tag=<<concatenate $tag1$ "]tag[" $tag2$ "]tag[" $tag3$>> sort="sort[title]"/>
+</div>
+\end
+
+
+\define branch()
+<$list filter="[tag<currentTiddler>]">
+<$link>''{{!!caption}}:''</$link>
+<$transclude tiddler="$:/core/ui/ViewTemplate/body" />
+</$list>
+\end
+
+
+\define leaf-1(tag1)
+<ul>
+<$list filter=<<concatenate "[tag[" $tag1$ "]]" >>>
+<li>
+<$link>
+{{!!title}}
+</$link>
+<$transclude tiddler="$:/core/ui/ViewTemplate/subtitle" />
+</li>
+</$list>
+</ul>
+\end
+
+
+\define leaf-1-or-2(tag1, or1, or2)
+<ul>
+<$list filter=<<concatenate "[tag[" $or1$ "]] [tag[" $or2$ "]] +[tag[" $tag1$ "]]" >>>
+<li>
+<$link>
+{{!!title}}
+</$link>
+<$transclude tiddler="$:/core/ui/ViewTemplate/subtitle" />
+</li>
+</$list>
+</ul>
+\end
+
+
+\define leaf-2(tag1, tag2)
+<ul>
+<$list filter=<<concatenate "[tag[" $tag1$ "]tag[" $tag2$ "]]" >>>
+<li>
+<$link>
+{{!!title}}
+</$link>
+<$transclude tiddler="$:/core/ui/ViewTemplate/subtitle" />
+</li>
+</$list>
+</ul>
+\end
+
+\define leaf-2-or-2(tag1, tag2, or1, or2)
+<ul>
+<$list filter=<<concatenate "[tag[" $or1$ "]] [tag[" $or2$ "]] +[tag[" $tag1$ "]tag[" $tag2$ "]]" >>>
+<li>
+<$link>
+{{!!title}}
+</$link>
+<$transclude tiddler="$:/core/ui/ViewTemplate/subtitle" />
+</li>
+</$list>
+</ul>
+\end

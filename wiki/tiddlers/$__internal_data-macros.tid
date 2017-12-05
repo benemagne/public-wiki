@@ -1,0 +1,115 @@
+created: 20171204170455619
+modified: 20171205173218750
+tags: $:/tags/Macro
+title: $:/internal/data-macros
+
+\define display-attributes-event()
+|!Title |{{!!event.title}} |
+|!Start |{{!!event.start}} |
+|!End |{{!!event.end}} |
+|!Location |{{!!event.location}} |
+|!Organizer|{{!!event.organizer}} |
+|!URL |{{!!event.url}} |
+\end
+
+
+\define display-attributes-quote()
+|!Author |{{!!quote.author}} |
+|!Form |{{!!quote.form}} |
+|!Topic |{{!!quote.topic}} |
+|!Occasion |{{!!quote.occasion}} |
+|!Source |{{!!quote.source}} |
+\end
+
+
+\define display-attributes-article()
+|!Author |{{!!article.author}} |
+|!Title |{{!!article.title}} |
+|!Journal |{{!!article.journal}} |
+|!Year |{{!!article.year}} |
+|!Month |{{!!article.month}} |
+|!Volume |{{!!article.volume}} |
+|!Number |{{!!article.number}} |
+|!Pages |{{!!article.pages}} |
+|!URL |{{!!article.url}} |
+\end
+
+
+\define display-attributes-online-article()
+|!Author |{{!!online-article.author}} |
+|!Title |{{!!online-article.title}} |
+|!Medium |{{!!online-article.medium}} |
+|!Year |{{!!online-article.year}} |
+|!Date |{{!!online-article.date}} |
+|!Accessed |{{!!online-article.accessed}} |
+|!URL |{{!!online-article.url}} |
+\end
+
+
+\define display-attributes-book()
+|!Author |{{!!book.author}} |
+|!Editor |{{!!book.editor}} |
+|!Title |{{!!book.title}} |
+|!Publisher |{{!!book.publisher}} |
+|!Year |{{!!book.year}} |
+|!Series |{{!!book.series}} |
+|!Volume |{{!!book.volume}} |
+|!Address |{{!!book.address}} |
+|!Edition |{{!!book.edition}} |
+|!URL |{{!!book.url}} |
+\end
+
+
+\define display-linked-content()
+''Related content:''
+
+<$list filter="[tag<currentTiddler>]" emptyMessage="//No related content found//">
+<$link to={{!!title}}>
+<$transclude field="caption">
+<$view field="title"/>
+</$transclude>
+</$link>
+<br>
+</$list>
+
+''References:''
+
+<$list filter="[<currentTiddler>backlinks[]]" emptyMessage="//No references found//">
+<$link to={{!!title}}>
+<$transclude field="caption">
+<$view field="title"/>
+</$transclude>
+</$link>
+<br>
+</$list>
+\end
+
+
+\define display-preview()
+''Preview:''
+
+<$select field="selection" multiple>
+<$list filter='[tag<currentTiddler>]'>
+<option value=<<currentTiddler>>>
+<$transclude field="caption">
+<$view field="title"/>
+</$transclude>
+</option>
+</$list>
+</$select>
+
+<$button>
+<$action-setfield selection=""/>
+Switch off
+</$button>
+
+<$list filter=[list[!!selection]]>
+
+---
+
+<$link>''{{!!title}}''</$link>
+<$transclude tiddler="$:/core/ui/ViewTemplate/subtitle" />
+
+<$transclude tiddler="$:/core/ui/ViewTemplate/body" />
+</$list>
+\end
