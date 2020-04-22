@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - "node"
 before_script:
-  - npm install -g tiddlywiki
+  - npm install -g tiddlywiki@5.1.18
 script: tiddlywiki ./*wiki --build
 
 after_success:
