@@ -1,0 +1,17 @@
+created: 2020042212000000
+modified: 2020042212000000
+synopsis: ---
+tags: Reflection Internal Post
+title: About RandomRelay
+type: text/vnd.tiddlywiki
+
+''So what's RandomRelay?''
+
+It's the primary place for me to dump my random thoughts on (mostly) random things.
+
+''Why "random relay"?''
+
+The notion has its roots in deconstructivist metaphysics. It would take more than a few sentences to explain its full meaning, but be assured it is very deep. It also happens to be a lousy pun on my last name.
+
+//URL of this post://<br>
+<$macrocall $name="createUrlLink" title={{!!title}}/>
